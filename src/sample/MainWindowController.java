@@ -5,6 +5,7 @@ import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
+import winWorkHelperLib.WinHelper;
 
 public class MainWindowController {
 
@@ -23,14 +24,17 @@ public class MainWindowController {
     @FXML
     private Button buttonExit;
 
+    private WinHelper wh = new WinHelper();
+
     @FXML
     void exitProgram(MouseEvent event) {
-
+        // Закрываем окно в  котором находится кнопка
+        buttonExit.getScene().getWindow().hide();
     }
 
     @FXML
     void openLab2(MouseEvent event) {
-
+        wh.openWindow("/sample/lab2Window.fxml");
     }
 
     @FXML
