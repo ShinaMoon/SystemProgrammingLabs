@@ -34,11 +34,14 @@ public class MainWindowController {
 
     @FXML
     void openLab2(MouseEvent event) {
+
         wh.openWindow("/sample/lab2Window.fxml");
     }
 
     @FXML
     void openOldLab(MouseEvent event) {
+
+        wh.openWindow("/OldLabs/MainWindow.fxml");
 
     }
 
